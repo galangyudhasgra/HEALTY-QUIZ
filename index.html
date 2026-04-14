@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kuis Pola Hidup Sehat - Next Level</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-box" id="start-screen">
+  <h1>Kuis Pola Hidup Sehat</h1>
+  <button onclick="startGame()">Mulai Game</button>
+</div>
+
+<div class="quiz-box hidden" id="quiz-screen">
+  <h2 id="question"></h2>
+  <div id="answers"></div>
+  <p>⏱️ Waktu: <span id="timer">10</span>s</p>
+  <p>❤️ Nyawa: <span id="lives">3</span></p>
+</div>
+
+<div class="quiz-box hidden" id="end-screen">
+  <h2 id="final-text"></h2>
+  <p id="final-score"></p>
+  <button onclick="restartGame()">Main Lagi</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
